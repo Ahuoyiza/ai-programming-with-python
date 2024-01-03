@@ -1,0 +1,31 @@
+Module 1: Introduction to AI Programming with Python
+At your leisure
+
+Module 2: Intro to Python
+Lessons (Why Python Programming, Data Types and Operators, Control Flow, Functions and Scripting)
+
+1.5 weeks
+Project_1 (using an Image classifier)
+
+1.5 week
+Module 3: Numpy, Pandas, Matplotlib
+Anaconda, Jupyter Notebooks
+
+1 week
+Numpy, Pandas, Matplotib
+
+1.5 weeks
+Module 4: Linear Algebra Essentials
+Lessons (Introduction, Vectors, Linear Combination, Linear Transformation and Matrices and Linear Algebra in Neural Networks )
+
+0.5 week
+Labs (Vectors, Linear Combination and Linear Mapping)
+
+0.5 week
+Module 5: Neural Networks
+Lessons (Introduction to Neural Networks, Implementing Gradient Descent and Training Neural Networks)
+
+1 week
+Lesson (Deep Learning with PyTorch)
+
+1 week
