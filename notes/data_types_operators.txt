@@ -178,3 +178,69 @@ b = 3
 print(f"The sum of {a} and {b} is {a+b}")
 Example 2 Output py The sum of 5 and 3 is 8
 
+Another important string method: split()
+A helpful string method when working with strings is the .split method. This function or method returns a data container called a list that contains the words from the input string. We will be introducing you to the concept of lists in the next video.
+
+The split method has two arguments (sep and maxsplit). The sep argument stands for "separator". It can be used to identify how the string should be split up (e.g., whitespace characters like space, tab, return, newline; specific punctuation (e.g., comma, dashes)). If the sep argument is not provided, the default separator is whitespace.
+
+True to its name, the maxsplit argument provides the maximum number of splits. The argument gives maxsplit + 1 number of elements in the new list, with the remaining string being returned as the last element in the list. You can read more about these methods in the Python documentation too.
+
+The syntax for the split method is: string.split(sep, maxsplit)
+
+Here are some examples for the .split() method.
+
+A basic split method
+new_str = "The cow jumped over the moon."
+new_str.split()
+Output is:
+
+['The', 'cow', 'jumped', 'over', 'the', 'moon.']
+The separator is space, and the maxsplit argument is set to 3
+new_str.split(' ', 3)
+Output is:
+
+['The', 'cow', 'jumped', 'over the moon.']
+
+=======
+
+Solution: String Methods Practice
+Version 1
+verse = "If you can keep your head when all about you\n  Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n  But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n  Or being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\n  And yet don’t look too good, nor talk too wise:"
+print(verse, "\n")
+
+print("Verse has a length of {} characters.".format(len(verse)))
+print("The first occurence of the word 'and' occurs at the {}th index.".format(verse.find('and')))
+print("The last occurence of the word 'you' occurs at the {}th index.".format(verse.rfind('you')))
+print("The word 'you' occurs {} times in the verse.".format(verse.count('you')))
+Version 2
+Here's another way you could write the print statements and get the same output. Recall that a string is an ordered datatype, and therefore, each item can be called by a location, and a location is each character.
+
+verse = "If you can keep your head when all about you\n  Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n  But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n  Or being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\n  And yet don’t look too good, nor talk too wise:"
+print(verse, "\n")
+
+message = "Verse has a length of {} characters.\nThe first occurence of the \
+word 'and' occurs at the {}th index.\nThe last occurence of the word 'you' \
+occurs at the {}th index.\nThe word 'you' occurs {} times in the verse."
+
+length = len(verse)
+first_idx = verse.find('and')
+last_idx = verse.rfind('you')
+count = verse.count('you')
+
+print(message.format(length, first_idx, last_idx, count))
+Output:
+If you can keep your head when all about you
+  Are losing theirs and blaming it on you,
+If you can trust yourself when all men doubt you,
+  But make allowance for their doubting too;
+If you can wait and not be tired by waiting,
+  Or being lied about, don’t deal in lies,
+Or being hated, don’t give way to hating,
+  And yet don’t look too good, nor talk too wise: 
+
+Verse has a length of 362 characters.
+The first occurence of the word 'and' occurs at the 65th index.
+The last occurence of the word 'you' occurs at the 186th index.
+The word 'you' occurs 8 times in the verse.
+========
+
